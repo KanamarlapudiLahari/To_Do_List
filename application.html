@@ -1,0 +1,97 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">To-Do List</h1>
+        <div id="task-form" class="input-group mb-3">
+            <input type="text" id="task-input" class="form-control" placeholder="Enter a task" aria-label="Task" required>
+            <input type="text" id="description-input" class="form-control" placeholder="Enter task description" aria-label="Description" required>
+            <input type="date" id="due-date" class="form-control" required>
+            <div class="input-group-append">
+                <button class="btn btn-primary" id="add-btn" onclick="addTask()">Add Task</button>
+                <button class="btn btn-secondary d-none" id="cancel-btn" onclick="cancelEdit()">Cancel</button>
+            </div>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Task Title</th>
+                    <th>Task Description</th>
+                    <th>Due Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="task-list"></tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">To-Do List</h1>
+        
+        <!-- Task Form -->
+        <form id="task-form" class="mb-3">
+            <div class="form-group">
+                <label for="task-input">Task Title</label>
+                <input type="text" id="task-input" class="form-control" placeholder="Enter a task" required>
+            </div>
+            <div class="form-group">
+                <label for="description-input">Task Description</label>
+                <input type="text" id="description-input" class="form-control" placeholder="Enter task description" required>
+            </div>
+            <div class="form-group">
+                <label for="due-date">Due Date</label>
+                <input type="date" id="due-date" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-primary" id="add-btn" onclick="addTask()">Add Task</button>
+                <button type="button" class="btn btn-secondary d-none" id="cancel-btn" onclick="cancelEdit()">Cancel</button>
+            </div>
+        </form>
+        
+        <!-- Task Table -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Task Title</th>
+                    <th>Task Description</th>
+                    <th>Due Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="task-list"></tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
